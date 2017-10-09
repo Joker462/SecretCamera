@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingLogoWithSwitchCell" id="KGk-i7-Jjw" customClass="SettingLogoWithSwitchCell" customModule="SecretCamera" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SEG-IG-OTy">
+                        <rect key="frame" x="15" y="6.5" width="28.5" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="SEG-IG-OTy" secondAttribute="height" multiplier="1:1" id="DHZ-0l-UFL"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUI-Ao-wnq">
+                        <rect key="frame" x="58.5" y="14" width="182.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6gK-Gz-fYf">
+                        <rect key="frame" x="256" y="6" width="51" height="31"/>
+                        <connections>
+                            <action selector="selectedSwitchValueChanged:" destination="KGk-i7-Jjw" eventType="valueChanged" id="Bge-bm-YqF"/>
+                        </connections>
+                    </switch>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="SEG-IG-OTy" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="3hb-Hh-oAI"/>
+                    <constraint firstItem="FUI-Ao-wnq" firstAttribute="leading" secondItem="SEG-IG-OTy" secondAttribute="trailing" constant="15" id="8Te-3S-ABc"/>
+                    <constraint firstItem="6gK-Gz-fYf" firstAttribute="leading" secondItem="FUI-Ao-wnq" secondAttribute="trailing" constant="15" id="Eei-cp-gI0"/>
+                    <constraint firstItem="6gK-Gz-fYf" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="W9f-5g-jnO"/>
+                    <constraint firstAttribute="trailing" secondItem="6gK-Gz-fYf" secondAttribute="trailing" constant="15" id="WxT-3R-fed"/>
+                    <constraint firstItem="SEG-IG-OTy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Zq0-fn-9NA"/>
+                    <constraint firstItem="FUI-Ao-wnq" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="eIV-XO-PVd"/>
+                    <constraint firstItem="SEG-IG-OTy" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="29:44" id="i2v-ut-0zK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="logoImageView" destination="SEG-IG-OTy" id="Mot-1E-40e"/>
+                <outlet property="selectSwitch" destination="6gK-Gz-fYf" id="PrE-2z-d3R"/>
+                <outlet property="titleLabel" destination="FUI-Ao-wnq" id="Vqt-Y5-NV1"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

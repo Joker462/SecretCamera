@@ -1,0 +1,770 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B2021AF41F4F16AD00A0EDC0 /* Cover.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2021AF31F4F16AD00A0EDC0 /* Cover.swift */; };
+		B2021AF81F4F21C700A0EDC0 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2021AF71F4F21C700A0EDC0 /* Utils.swift */; };
+		B2027D801F5316B700B4A541 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2027D7F1F5316B700B4A541 /* UIView.swift */; };
+		B20405BE1F78AAAE008B5D8E /* BlackCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20405BD1F78AAAE008B5D8E /* BlackCoverView.swift */; };
+		B207F3F91F4B191B003815C4 /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B207F3F81F4B191B003815C4 /* SettingsPresenter.swift */; };
+		B207F3FB1F4B1C04003815C4 /* SettingsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B207F3FA1F4B1C04003815C4 /* SettingsConfigurator.swift */; };
+		B207F3FD1F4B1CC0003815C4 /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B207F3FC1F4B1CC0003815C4 /* SettingsRouter.swift */; };
+		B207F4001F4B1D15003815C4 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B207F3FF1F4B1D15003815C4 /* ViewRouter.swift */; };
+		B207F4021F4B269E003815C4 /* VideoSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B207F4011F4B269E003815C4 /* VideoSetting.swift */; };
+		B207F4041F4B2BED003815C4 /* PhotoSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B207F4031F4B2BED003815C4 /* PhotoSetting.swift */; };
+		B20B883E1F7616DC0081CE3B /* VideoPreviewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20B883D1F7616DC0081CE3B /* VideoPreviewPresenter.swift */; };
+		B20B88401F7616EA0081CE3B /* VideoPreviewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20B883F1F7616EA0081CE3B /* VideoPreviewRouter.swift */; };
+		B20B88421F7617090081CE3B /* VideoPreviewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20B88411F7617090081CE3B /* VideoPreviewConfigurator.swift */; };
+		B21CD13D1F568165003CA788 /* PhotoPreviewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21CD13C1F568165003CA788 /* PhotoPreviewPresenter.swift */; };
+		B21CD13F1F568176003CA788 /* PhotoPreviewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21CD13E1F568176003CA788 /* PhotoPreviewConfigurator.swift */; };
+		B21CD1411F56834E003CA788 /* PhotoPreviewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21CD1401F56834E003CA788 /* PhotoPreviewRouter.swift */; };
+		B21CD1431F569549003CA788 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21CD1421F569549003CA788 /* PreviewView.swift */; };
+		B22295981F78E08F00215AF7 /* WebCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22295971F78E08F00215AF7 /* WebCoverView.swift */; };
+		B23BB0161F5FAE84007D3AF5 /* SettingSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23BB0141F5FAE84007D3AF5 /* SettingSwitchCell.swift */; };
+		B23BB0171F5FAE84007D3AF5 /* SettingSwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23BB0151F5FAE84007D3AF5 /* SettingSwitchCell.xib */; };
+		B23BB01A1F5FB08D007D3AF5 /* SettingLogoWithSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23BB0181F5FB08D007D3AF5 /* SettingLogoWithSwitchCell.swift */; };
+		B23BB01B1F5FB08D007D3AF5 /* SettingLogoWithSwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23BB0191F5FB08D007D3AF5 /* SettingLogoWithSwitchCell.xib */; };
+		B23BB01E1F5FB34E007D3AF5 /* SettingLogoWithValueDisclosureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23BB01C1F5FB34E007D3AF5 /* SettingLogoWithValueDisclosureCell.swift */; };
+		B23BB01F1F5FB34E007D3AF5 /* SettingLogoWithValueDisclosureCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B23BB01D1F5FB34E007D3AF5 /* SettingLogoWithValueDisclosureCell.xib */; };
+		B23BB0211F5FB870007D3AF5 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23BB0201F5FB870007D3AF5 /* UITableView.swift */; };
+		B23BB0231F5FB8BA007D3AF5 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23BB0221F5FB8BA007D3AF5 /* String.swift */; };
+		B23BB0251F5FBA00007D3AF5 /* SettingsTableViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23BB0241F5FBA00007D3AF5 /* SettingsTableViewControl.swift */; };
+		B23DF7711F6260030007BDEA /* CoversConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23DF7701F6260030007BDEA /* CoversConfigurator.swift */; };
+		B23DF7731F629B660007BDEA /* CoversCarouselControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23DF7721F629B660007BDEA /* CoversCarouselControl.swift */; };
+		B23DF7751F629E410007BDEA /* JButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23DF7741F629E410007BDEA /* JButton.swift */; };
+		B23DF7771F62A0920007BDEA /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23DF7761F62A0920007BDEA /* UIColor.swift */; };
+		B23EFEAD1F567AAF006F7E6D /* PhotoPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23EFEAC1F567AAF006F7E6D /* PhotoPreviewViewController.swift */; };
+		B244748E1F7210AC002744F1 /* ChooseActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B244748D1F7210AC002744F1 /* ChooseActionViewController.swift */; };
+		B24474901F7210FE002744F1 /* ChooseActionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B244748F1F7210FE002744F1 /* ChooseActionPresenter.swift */; };
+		B24474921F721BFF002744F1 /* ChooseActionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24474911F721BFF002744F1 /* ChooseActionRouter.swift */; };
+		B24474941F721C0C002744F1 /* ChooseActionConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24474931F721C0C002744F1 /* ChooseActionConfigurator.swift */; };
+		B24BF6E71F619C650033E788 /* CoversPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24BF6E61F619C650033E788 /* CoversPresenter.swift */; };
+		B24DB03C1F4D2DB70044D53D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B24DB03B1F4D2DB70044D53D /* QuartzCore.framework */; };
+		B24DB0401F4D2E440044D53D /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = B24DB03F1F4D2E440044D53D /* iCarousel.m */; };
+		B24E6C661F6B94FE00100FD0 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24E6C651F6B94FE00100FD0 /* Enum.swift */; };
+		B24E6C691F6B970300100FD0 /* SettingCheckMarkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24E6C671F6B970300100FD0 /* SettingCheckMarkCell.swift */; };
+		B24E6C6A1F6B970300100FD0 /* SettingCheckMarkCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B24E6C681F6B970300100FD0 /* SettingCheckMarkCell.xib */; };
+		B24E6C6D1F6BB8A200100FD0 /* OptionSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24E6C6C1F6BB8A200100FD0 /* OptionSettingsViewController.swift */; };
+		B24E6C6F1F6BBE3800100FD0 /* OptionSettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24E6C6E1F6BBE3800100FD0 /* OptionSettingsPresenter.swift */; };
+		B24E6C731F6BBE5600100FD0 /* OptionSettingsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24E6C721F6BBE5600100FD0 /* OptionSettingsConfigurator.swift */; };
+		B25286FE1F67959A008F9EF1 /* CoverPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25286FD1F67959A008F9EF1 /* CoverPreviewViewController.swift */; };
+		B25287001F679A74008F9EF1 /* CoverPreviewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25286FF1F679A74008F9EF1 /* CoverPreviewPresenter.swift */; };
+		B25287021F679A85008F9EF1 /* CoverPreviewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25287011F679A85008F9EF1 /* CoverPreviewConfigurator.swift */; };
+		B2547DB21F7CB5EC00712943 /* GameCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2547DB11F7CB5EC00712943 /* GameCoverView.swift */; };
+		B2547DB51F7CE82E00712943 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2547DB41F7CE82E00712943 /* TutorialViewController.swift */; };
+		B2547DB71F7CF78200712943 /* CoversNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2547DB61F7CF78200712943 /* CoversNavigationController.swift */; };
+		B265D7CB1F68E67600F8092E /* CoverPreviewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B265D7CA1F68E67600F8092E /* CoverPreviewRouter.swift */; };
+		B265D7CD1F68EA6200F8092E /* CoversRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B265D7CC1F68EA6200F8092E /* CoversRouter.swift */; };
+		B277C0BF1F6FC13900F2F60D /* UIInterfaceOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B277C0BE1F6FC13900F2F60D /* UIInterfaceOrientation.swift */; };
+		B2882BC61F41638D00BC5385 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2882BC51F41638D00BC5385 /* AppDelegate.swift */; };
+		B2882BCB1F41638D00BC5385 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2882BC91F41638D00BC5385 /* Main.storyboard */; };
+		B2882BCD1F41638D00BC5385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2882BCC1F41638D00BC5385 /* Assets.xcassets */; };
+		B2882BD01F41638D00BC5385 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2882BCE1F41638D00BC5385 /* LaunchScreen.storyboard */; };
+		B2882BD91F4194C300BC5385 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2882BD81F4194C300BC5385 /* SettingsViewController.swift */; };
+		B2882BE21F419B2D00BC5385 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2882BE11F419B2D00BC5385 /* BaseTableViewCell.swift */; };
+		B2882BE51F419C4100BC5385 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2882BE41F419C4100BC5385 /* UILabel.swift */; };
+		B2882BE81F419C9900BC5385 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2882BE71F419C9900BC5385 /* Constants.swift */; };
+		B2882BEA1F419DB300BC5385 /* CameraSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2882BE91F419DB300BC5385 /* CameraSetting.swift */; };
+		B2BA6C741F74D2A8003FAEFA /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BA6C731F74D2A8003FAEFA /* Action.swift */; };
+		B2BA6C771F74FA21003FAEFA /* VideoPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BA6C761F74FA21003FAEFA /* VideoPreviewViewController.swift */; };
+		B2E307921F5E956600790309 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E307911F5E956600790309 /* Setting.swift */; };
+		B2F1DC971F6149980097DB65 /* CoversViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F1DC961F6149980097DB65 /* CoversViewController.swift */; };
+		B2FE8AFB1F45E5B0001BB1C4 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FE8AFA1F45E5B0001BB1C4 /* BaseCollectionViewCell.swift */; };
+		B2FEC4CC1F4FBE03008166F5 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FEC4CB1F4FBE03008166F5 /* Reachability.swift */; };
+		B2FEC4CE1F4FC882008166F5 /* KeychainItemWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FEC4CD1F4FC882008166F5 /* KeychainItemWrapper.swift */; };
+		B2FF65EB1F6D1EB3008FC157 /* PhotoCaptureDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FF65EA1F6D1EB3008FC157 /* PhotoCaptureDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B2021AF31F4F16AD00A0EDC0 /* Cover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cover.swift; sourceTree = "<group>"; };
+		B2021AF71F4F21C700A0EDC0 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		B2027D7F1F5316B700B4A541 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		B20405BD1F78AAAE008B5D8E /* BlackCoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackCoverView.swift; sourceTree = "<group>"; };
+		B207F3F81F4B191B003815C4 /* SettingsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		B207F3FA1F4B1C04003815C4 /* SettingsConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsConfigurator.swift; sourceTree = "<group>"; };
+		B207F3FC1F4B1CC0003815C4 /* SettingsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
+		B207F3FF1F4B1D15003815C4 /* ViewRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		B207F4011F4B269E003815C4 /* VideoSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoSetting.swift; sourceTree = "<group>"; };
+		B207F4031F4B2BED003815C4 /* PhotoSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSetting.swift; sourceTree = "<group>"; };
+		B20B883D1F7616DC0081CE3B /* VideoPreviewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewPresenter.swift; sourceTree = "<group>"; };
+		B20B883F1F7616EA0081CE3B /* VideoPreviewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewRouter.swift; sourceTree = "<group>"; };
+		B20B88411F7617090081CE3B /* VideoPreviewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewConfigurator.swift; sourceTree = "<group>"; };
+		B21CD13C1F568165003CA788 /* PhotoPreviewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPreviewPresenter.swift; sourceTree = "<group>"; };
+		B21CD13E1F568176003CA788 /* PhotoPreviewConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPreviewConfigurator.swift; sourceTree = "<group>"; };
+		B21CD1401F56834E003CA788 /* PhotoPreviewRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPreviewRouter.swift; sourceTree = "<group>"; };
+		B21CD1421F569549003CA788 /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		B22295971F78E08F00215AF7 /* WebCoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebCoverView.swift; sourceTree = "<group>"; };
+		B23BB0141F5FAE84007D3AF5 /* SettingSwitchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingSwitchCell.swift; sourceTree = "<group>"; };
+		B23BB0151F5FAE84007D3AF5 /* SettingSwitchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingSwitchCell.xib; sourceTree = "<group>"; };
+		B23BB0181F5FB08D007D3AF5 /* SettingLogoWithSwitchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingLogoWithSwitchCell.swift; sourceTree = "<group>"; };
+		B23BB0191F5FB08D007D3AF5 /* SettingLogoWithSwitchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingLogoWithSwitchCell.xib; sourceTree = "<group>"; };
+		B23BB01C1F5FB34E007D3AF5 /* SettingLogoWithValueDisclosureCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingLogoWithValueDisclosureCell.swift; sourceTree = "<group>"; };
+		B23BB01D1F5FB34E007D3AF5 /* SettingLogoWithValueDisclosureCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingLogoWithValueDisclosureCell.xib; sourceTree = "<group>"; };
+		B23BB0201F5FB870007D3AF5 /* UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		B23BB0221F5FB8BA007D3AF5 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		B23BB0241F5FBA00007D3AF5 /* SettingsTableViewControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewControl.swift; sourceTree = "<group>"; };
+		B23DF7701F6260030007BDEA /* CoversConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoversConfigurator.swift; sourceTree = "<group>"; };
+		B23DF7721F629B660007BDEA /* CoversCarouselControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoversCarouselControl.swift; sourceTree = "<group>"; };
+		B23DF7741F629E410007BDEA /* JButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JButton.swift; sourceTree = "<group>"; };
+		B23DF7761F62A0920007BDEA /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		B23EFEAC1F567AAF006F7E6D /* PhotoPreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPreviewViewController.swift; sourceTree = "<group>"; };
+		B244748D1F7210AC002744F1 /* ChooseActionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseActionViewController.swift; sourceTree = "<group>"; };
+		B244748F1F7210FE002744F1 /* ChooseActionPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseActionPresenter.swift; sourceTree = "<group>"; };
+		B24474911F721BFF002744F1 /* ChooseActionRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseActionRouter.swift; sourceTree = "<group>"; };
+		B24474931F721C0C002744F1 /* ChooseActionConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseActionConfigurator.swift; sourceTree = "<group>"; };
+		B24BF6E61F619C650033E788 /* CoversPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoversPresenter.swift; sourceTree = "<group>"; };
+		B24DB03B1F4D2DB70044D53D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B24DB03F1F4D2E440044D53D /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		B24DB0411F4D2E710044D53D /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		B24DB0481F4D34300044D53D /* SecretCamera-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SecretCamera-Bridging-Header.h"; sourceTree = "<group>"; };
+		B24E6C651F6B94FE00100FD0 /* Enum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
+		B24E6C671F6B970300100FD0 /* SettingCheckMarkCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingCheckMarkCell.swift; sourceTree = "<group>"; };
+		B24E6C681F6B970300100FD0 /* SettingCheckMarkCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingCheckMarkCell.xib; sourceTree = "<group>"; };
+		B24E6C6C1F6BB8A200100FD0 /* OptionSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionSettingsViewController.swift; sourceTree = "<group>"; };
+		B24E6C6E1F6BBE3800100FD0 /* OptionSettingsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionSettingsPresenter.swift; sourceTree = "<group>"; };
+		B24E6C721F6BBE5600100FD0 /* OptionSettingsConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionSettingsConfigurator.swift; sourceTree = "<group>"; };
+		B25286FD1F67959A008F9EF1 /* CoverPreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverPreviewViewController.swift; sourceTree = "<group>"; };
+		B25286FF1F679A74008F9EF1 /* CoverPreviewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverPreviewPresenter.swift; sourceTree = "<group>"; };
+		B25287011F679A85008F9EF1 /* CoverPreviewConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverPreviewConfigurator.swift; sourceTree = "<group>"; };
+		B2547DB11F7CB5EC00712943 /* GameCoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCoverView.swift; sourceTree = "<group>"; };
+		B2547DB41F7CE82E00712943 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		B2547DB61F7CF78200712943 /* CoversNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoversNavigationController.swift; sourceTree = "<group>"; };
+		B265D7CA1F68E67600F8092E /* CoverPreviewRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverPreviewRouter.swift; sourceTree = "<group>"; };
+		B265D7CC1F68EA6200F8092E /* CoversRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoversRouter.swift; sourceTree = "<group>"; };
+		B277C0BE1F6FC13900F2F60D /* UIInterfaceOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIInterfaceOrientation.swift; sourceTree = "<group>"; };
+		B2882BC21F41638D00BC5385 /* SecretCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecretCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2882BC51F41638D00BC5385 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B2882BCA1F41638D00BC5385 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B2882BCC1F41638D00BC5385 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B2882BCF1F41638D00BC5385 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B2882BD11F41638D00BC5385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2882BD81F4194C300BC5385 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		B2882BE11F419B2D00BC5385 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		B2882BE41F419C4100BC5385 /* UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		B2882BE71F419C9900BC5385 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B2882BE91F419DB300BC5385 /* CameraSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraSetting.swift; sourceTree = "<group>"; };
+		B2BA6C731F74D2A8003FAEFA /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		B2BA6C761F74FA21003FAEFA /* VideoPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewViewController.swift; sourceTree = "<group>"; };
+		B2E307911F5E956600790309 /* Setting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		B2F1DC961F6149980097DB65 /* CoversViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoversViewController.swift; sourceTree = "<group>"; };
+		B2FE8AFA1F45E5B0001BB1C4 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		B2FEC4CB1F4FBE03008166F5 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		B2FEC4CD1F4FC882008166F5 /* KeychainItemWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItemWrapper.swift; sourceTree = "<group>"; };
+		B2FF65EA1F6D1EB3008FC157 /* PhotoCaptureDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCaptureDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B2882BBF1F41638D00BC5385 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B24DB03C1F4D2DB70044D53D /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B20405BC1F78AA6F008B5D8E /* CoverViews */ = {
+			isa = PBXGroup;
+			children = (
+				B20405BD1F78AAAE008B5D8E /* BlackCoverView.swift */,
+				B22295971F78E08F00215AF7 /* WebCoverView.swift */,
+				B2547DB11F7CB5EC00712943 /* GameCoverView.swift */,
+			);
+			name = CoverViews;
+			sourceTree = "<group>";
+		};
+		B207F3F51F4B149C003815C4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B23BB0141F5FAE84007D3AF5 /* SettingSwitchCell.swift */,
+				B23BB0151F5FAE84007D3AF5 /* SettingSwitchCell.xib */,
+				B23BB0181F5FB08D007D3AF5 /* SettingLogoWithSwitchCell.swift */,
+				B23BB0191F5FB08D007D3AF5 /* SettingLogoWithSwitchCell.xib */,
+				B23BB01C1F5FB34E007D3AF5 /* SettingLogoWithValueDisclosureCell.swift */,
+				B23BB01D1F5FB34E007D3AF5 /* SettingLogoWithValueDisclosureCell.xib */,
+				B24E6C671F6B970300100FD0 /* SettingCheckMarkCell.swift */,
+				B24E6C681F6B970300100FD0 /* SettingCheckMarkCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		B207F3FE1F4B1CFD003815C4 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				B23DF7741F629E410007BDEA /* JButton.swift */,
+				B2FEC4CD1F4FC882008166F5 /* KeychainItemWrapper.swift */,
+				B24DB03D1F4D2E090044D53D /* iCarousel */,
+				B207F3FF1F4B1D15003815C4 /* ViewRouter.swift */,
+				B21CD1421F569549003CA788 /* PreviewView.swift */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		B23EFEAE1F567AB4006F7E6D /* PhotoPreview */ = {
+			isa = PBXGroup;
+			children = (
+				B23EFEAC1F567AAF006F7E6D /* PhotoPreviewViewController.swift */,
+				B21CD13C1F568165003CA788 /* PhotoPreviewPresenter.swift */,
+				B21CD1401F56834E003CA788 /* PhotoPreviewRouter.swift */,
+				B21CD13E1F568176003CA788 /* PhotoPreviewConfigurator.swift */,
+				B2FF65EA1F6D1EB3008FC157 /* PhotoCaptureDelegate.swift */,
+			);
+			name = PhotoPreview;
+			sourceTree = "<group>";
+		};
+		B24DB03A1F4D2DB70044D53D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B24DB03B1F4D2DB70044D53D /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B24DB03D1F4D2E090044D53D /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				B24DB0411F4D2E710044D53D /* iCarousel.h */,
+				B24DB03F1F4D2E440044D53D /* iCarousel.m */,
+			);
+			path = iCarousel;
+			sourceTree = "<group>";
+		};
+		B24E6C6B1F6BB86000100FD0 /* OptionSettings */ = {
+			isa = PBXGroup;
+			children = (
+				B24E6C6C1F6BB8A200100FD0 /* OptionSettingsViewController.swift */,
+				B24E6C6E1F6BBE3800100FD0 /* OptionSettingsPresenter.swift */,
+				B24E6C721F6BBE5600100FD0 /* OptionSettingsConfigurator.swift */,
+			);
+			name = OptionSettings;
+			sourceTree = "<group>";
+		};
+		B25286FC1F6791CE008F9EF1 /* CoverPreview */ = {
+			isa = PBXGroup;
+			children = (
+				B25286FD1F67959A008F9EF1 /* CoverPreviewViewController.swift */,
+				B25286FF1F679A74008F9EF1 /* CoverPreviewPresenter.swift */,
+				B265D7CA1F68E67600F8092E /* CoverPreviewRouter.swift */,
+				B25287011F679A85008F9EF1 /* CoverPreviewConfigurator.swift */,
+			);
+			name = CoverPreview;
+			sourceTree = "<group>";
+		};
+		B2547DB31F7CE76C00712943 /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				B2547DB41F7CE82E00712943 /* TutorialViewController.swift */,
+			);
+			name = Tutorial;
+			sourceTree = "<group>";
+		};
+		B2882BB91F41638D00BC5385 = {
+			isa = PBXGroup;
+			children = (
+				B2882BC41F41638D00BC5385 /* SecretCamera */,
+				B2882BC31F41638D00BC5385 /* Products */,
+				B24DB03A1F4D2DB70044D53D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B2882BC31F41638D00BC5385 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2882BC21F41638D00BC5385 /* SecretCamera.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2882BC41F41638D00BC5385 /* SecretCamera */ = {
+			isa = PBXGroup;
+			children = (
+				B2882BE01F419B0F00BC5385 /* Base */,
+				B2882BDB1F4197DC00BC5385 /* Models */,
+				B2882BDA1F4197D200BC5385 /* Shared */,
+				B2882BD71F41687400BC5385 /* Scenes */,
+				B2882BC51F41638D00BC5385 /* AppDelegate.swift */,
+				B2882BC91F41638D00BC5385 /* Main.storyboard */,
+				B2882BCC1F41638D00BC5385 /* Assets.xcassets */,
+				B2882BCE1F41638D00BC5385 /* LaunchScreen.storyboard */,
+				B2882BD11F41638D00BC5385 /* Info.plist */,
+			);
+			path = SecretCamera;
+			sourceTree = "<group>";
+		};
+		B2882BD71F41687400BC5385 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				B2547DB31F7CE76C00712943 /* Tutorial */,
+				B2F1DC951F61495B0097DB65 /* Covers */,
+				B2CB1D781F7115F1000D647D /* ChooseAction */,
+				B25286FC1F6791CE008F9EF1 /* CoverPreview */,
+				B24E6C6B1F6BB86000100FD0 /* OptionSettings */,
+				B2882BDD1F4198BC00BC5385 /* Settings */,
+				B23EFEAE1F567AB4006F7E6D /* PhotoPreview */,
+				B2BA6C751F74F5CA003FAEFA /* VideoPreview */,
+				B20405BC1F78AA6F008B5D8E /* CoverViews */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		B2882BDA1F4197D200BC5385 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B207F3FE1F4B1CFD003815C4 /* Libraries */,
+				B2882BE61F419C8900BC5385 /* Utils */,
+				B2882BE31F419C1700BC5385 /* Extensions */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		B2882BDB1F4197DC00BC5385 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B2882BE91F419DB300BC5385 /* CameraSetting.swift */,
+				B207F4011F4B269E003815C4 /* VideoSetting.swift */,
+				B207F4031F4B2BED003815C4 /* PhotoSetting.swift */,
+				B2021AF31F4F16AD00A0EDC0 /* Cover.swift */,
+				B2E307951F5E9DC600790309 /* Basic */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B2882BDD1F4198BC00BC5385 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				B207F3F51F4B149C003815C4 /* Cells */,
+				B2882BD81F4194C300BC5385 /* SettingsViewController.swift */,
+				B207F3F81F4B191B003815C4 /* SettingsPresenter.swift */,
+				B207F3FC1F4B1CC0003815C4 /* SettingsRouter.swift */,
+				B207F3FA1F4B1C04003815C4 /* SettingsConfigurator.swift */,
+				B23BB0241F5FBA00007D3AF5 /* SettingsTableViewControl.swift */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		B2882BE01F419B0F00BC5385 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B2882BE11F419B2D00BC5385 /* BaseTableViewCell.swift */,
+				B2FE8AFA1F45E5B0001BB1C4 /* BaseCollectionViewCell.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B2882BE31F419C1700BC5385 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B2027D7F1F5316B700B4A541 /* UIView.swift */,
+				B2882BE41F419C4100BC5385 /* UILabel.swift */,
+				B23BB0201F5FB870007D3AF5 /* UITableView.swift */,
+				B23BB0221F5FB8BA007D3AF5 /* String.swift */,
+				B23DF7761F62A0920007BDEA /* UIColor.swift */,
+				B24E6C651F6B94FE00100FD0 /* Enum.swift */,
+				B277C0BE1F6FC13900F2F60D /* UIInterfaceOrientation.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B2882BE61F419C8900BC5385 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B2FEC4CB1F4FBE03008166F5 /* Reachability.swift */,
+				B2021AF71F4F21C700A0EDC0 /* Utils.swift */,
+				B24DB0481F4D34300044D53D /* SecretCamera-Bridging-Header.h */,
+				B2882BE71F419C9900BC5385 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B2BA6C751F74F5CA003FAEFA /* VideoPreview */ = {
+			isa = PBXGroup;
+			children = (
+				B2BA6C761F74FA21003FAEFA /* VideoPreviewViewController.swift */,
+				B20B883D1F7616DC0081CE3B /* VideoPreviewPresenter.swift */,
+				B20B883F1F7616EA0081CE3B /* VideoPreviewRouter.swift */,
+				B20B88411F7617090081CE3B /* VideoPreviewConfigurator.swift */,
+			);
+			name = VideoPreview;
+			sourceTree = "<group>";
+		};
+		B2CB1D781F7115F1000D647D /* ChooseAction */ = {
+			isa = PBXGroup;
+			children = (
+				B244748D1F7210AC002744F1 /* ChooseActionViewController.swift */,
+				B244748F1F7210FE002744F1 /* ChooseActionPresenter.swift */,
+				B24474911F721BFF002744F1 /* ChooseActionRouter.swift */,
+				B24474931F721C0C002744F1 /* ChooseActionConfigurator.swift */,
+			);
+			name = ChooseAction;
+			sourceTree = "<group>";
+		};
+		B2E307951F5E9DC600790309 /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				B2E307911F5E956600790309 /* Setting.swift */,
+				B2BA6C731F74D2A8003FAEFA /* Action.swift */,
+			);
+			name = Basic;
+			sourceTree = "<group>";
+		};
+		B2F1DC951F61495B0097DB65 /* Covers */ = {
+			isa = PBXGroup;
+			children = (
+				B2547DB61F7CF78200712943 /* CoversNavigationController.swift */,
+				B2F1DC961F6149980097DB65 /* CoversViewController.swift */,
+				B24BF6E61F619C650033E788 /* CoversPresenter.swift */,
+				B265D7CC1F68EA6200F8092E /* CoversRouter.swift */,
+				B23DF7701F6260030007BDEA /* CoversConfigurator.swift */,
+				B23DF7721F629B660007BDEA /* CoversCarouselControl.swift */,
+			);
+			name = Covers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2882BC11F41638D00BC5385 /* SecretCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2882BD41F41638D00BC5385 /* Build configuration list for PBXNativeTarget "SecretCamera" */;
+			buildPhases = (
+				B2882BBE1F41638D00BC5385 /* Sources */,
+				B2882BBF1F41638D00BC5385 /* Frameworks */,
+				B2882BC01F41638D00BC5385 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SecretCamera;
+			productName = SecretCamera;
+			productReference = B2882BC21F41638D00BC5385 /* SecretCamera.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B2882BBA1F41638D00BC5385 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Hung;
+				TargetAttributes = {
+					B2882BC11F41638D00BC5385 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = K4L43PV7CC;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B2882BBD1F41638D00BC5385 /* Build configuration list for PBXProject "SecretCamera" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B2882BB91F41638D00BC5385;
+			productRefGroup = B2882BC31F41638D00BC5385 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2882BC11F41638D00BC5385 /* SecretCamera */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B2882BC01F41638D00BC5385 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B23BB01F1F5FB34E007D3AF5 /* SettingLogoWithValueDisclosureCell.xib in Resources */,
+				B23BB01B1F5FB08D007D3AF5 /* SettingLogoWithSwitchCell.xib in Resources */,
+				B2882BD01F41638D00BC5385 /* LaunchScreen.storyboard in Resources */,
+				B24E6C6A1F6B970300100FD0 /* SettingCheckMarkCell.xib in Resources */,
+				B2882BCD1F41638D00BC5385 /* Assets.xcassets in Resources */,
+				B23BB0171F5FAE84007D3AF5 /* SettingSwitchCell.xib in Resources */,
+				B2882BCB1F41638D00BC5385 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B2882BBE1F41638D00BC5385 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B24E6C6D1F6BB8A200100FD0 /* OptionSettingsViewController.swift in Sources */,
+				B24474901F7210FE002744F1 /* ChooseActionPresenter.swift in Sources */,
+				B2547DB71F7CF78200712943 /* CoversNavigationController.swift in Sources */,
+				B25287001F679A74008F9EF1 /* CoverPreviewPresenter.swift in Sources */,
+				B207F3FD1F4B1CC0003815C4 /* SettingsRouter.swift in Sources */,
+				B2FE8AFB1F45E5B0001BB1C4 /* BaseCollectionViewCell.swift in Sources */,
+				B2547DB21F7CB5EC00712943 /* GameCoverView.swift in Sources */,
+				B21CD1411F56834E003CA788 /* PhotoPreviewRouter.swift in Sources */,
+				B2882BC61F41638D00BC5385 /* AppDelegate.swift in Sources */,
+				B2882BEA1F419DB300BC5385 /* CameraSetting.swift in Sources */,
+				B23BB0211F5FB870007D3AF5 /* UITableView.swift in Sources */,
+				B2F1DC971F6149980097DB65 /* CoversViewController.swift in Sources */,
+				B2FEC4CE1F4FC882008166F5 /* KeychainItemWrapper.swift in Sources */,
+				B2027D801F5316B700B4A541 /* UIView.swift in Sources */,
+				B2882BE21F419B2D00BC5385 /* BaseTableViewCell.swift in Sources */,
+				B23BB01E1F5FB34E007D3AF5 /* SettingLogoWithValueDisclosureCell.swift in Sources */,
+				B21CD1431F569549003CA788 /* PreviewView.swift in Sources */,
+				B23BB0251F5FBA00007D3AF5 /* SettingsTableViewControl.swift in Sources */,
+				B2021AF41F4F16AD00A0EDC0 /* Cover.swift in Sources */,
+				B24474921F721BFF002744F1 /* ChooseActionRouter.swift in Sources */,
+				B23DF7711F6260030007BDEA /* CoversConfigurator.swift in Sources */,
+				B23EFEAD1F567AAF006F7E6D /* PhotoPreviewViewController.swift in Sources */,
+				B23BB01A1F5FB08D007D3AF5 /* SettingLogoWithSwitchCell.swift in Sources */,
+				B20B88421F7617090081CE3B /* VideoPreviewConfigurator.swift in Sources */,
+				B2882BE81F419C9900BC5385 /* Constants.swift in Sources */,
+				B2BA6C741F74D2A8003FAEFA /* Action.swift in Sources */,
+				B23DF7751F629E410007BDEA /* JButton.swift in Sources */,
+				B277C0BF1F6FC13900F2F60D /* UIInterfaceOrientation.swift in Sources */,
+				B24E6C6F1F6BBE3800100FD0 /* OptionSettingsPresenter.swift in Sources */,
+				B22295981F78E08F00215AF7 /* WebCoverView.swift in Sources */,
+				B24BF6E71F619C650033E788 /* CoversPresenter.swift in Sources */,
+				B25286FE1F67959A008F9EF1 /* CoverPreviewViewController.swift in Sources */,
+				B23DF7771F62A0920007BDEA /* UIColor.swift in Sources */,
+				B2882BE51F419C4100BC5385 /* UILabel.swift in Sources */,
+				B24DB0401F4D2E440044D53D /* iCarousel.m in Sources */,
+				B24E6C661F6B94FE00100FD0 /* Enum.swift in Sources */,
+				B207F3FB1F4B1C04003815C4 /* SettingsConfigurator.swift in Sources */,
+				B2E307921F5E956600790309 /* Setting.swift in Sources */,
+				B24E6C731F6BBE5600100FD0 /* OptionSettingsConfigurator.swift in Sources */,
+				B23DF7731F629B660007BDEA /* CoversCarouselControl.swift in Sources */,
+				B23BB0161F5FAE84007D3AF5 /* SettingSwitchCell.swift in Sources */,
+				B21CD13D1F568165003CA788 /* PhotoPreviewPresenter.swift in Sources */,
+				B24E6C691F6B970300100FD0 /* SettingCheckMarkCell.swift in Sources */,
+				B265D7CD1F68EA6200F8092E /* CoversRouter.swift in Sources */,
+				B20B88401F7616EA0081CE3B /* VideoPreviewRouter.swift in Sources */,
+				B207F4041F4B2BED003815C4 /* PhotoSetting.swift in Sources */,
+				B207F4021F4B269E003815C4 /* VideoSetting.swift in Sources */,
+				B21CD13F1F568176003CA788 /* PhotoPreviewConfigurator.swift in Sources */,
+				B20405BE1F78AAAE008B5D8E /* BlackCoverView.swift in Sources */,
+				B2FF65EB1F6D1EB3008FC157 /* PhotoCaptureDelegate.swift in Sources */,
+				B207F4001F4B1D15003815C4 /* ViewRouter.swift in Sources */,
+				B2882BD91F4194C300BC5385 /* SettingsViewController.swift in Sources */,
+				B207F3F91F4B191B003815C4 /* SettingsPresenter.swift in Sources */,
+				B2FEC4CC1F4FBE03008166F5 /* Reachability.swift in Sources */,
+				B244748E1F7210AC002744F1 /* ChooseActionViewController.swift in Sources */,
+				B20B883E1F7616DC0081CE3B /* VideoPreviewPresenter.swift in Sources */,
+				B24474941F721C0C002744F1 /* ChooseActionConfigurator.swift in Sources */,
+				B265D7CB1F68E67600F8092E /* CoverPreviewRouter.swift in Sources */,
+				B23BB0231F5FB8BA007D3AF5 /* String.swift in Sources */,
+				B2547DB51F7CE82E00712943 /* TutorialViewController.swift in Sources */,
+				B2021AF81F4F21C700A0EDC0 /* Utils.swift in Sources */,
+				B2BA6C771F74FA21003FAEFA /* VideoPreviewViewController.swift in Sources */,
+				B25287021F679A85008F9EF1 /* CoverPreviewConfigurator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B2882BC91F41638D00BC5385 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2882BCA1F41638D00BC5385 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B2882BCE1F41638D00BC5385 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2882BCF1F41638D00BC5385 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B2882BD21F41638D00BC5385 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B2882BD31F41638D00BC5385 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B2882BD51F41638D00BC5385 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K4L43PV7CC;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = SecretCamera/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hungthai.joker.SecretCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "SecretCamera/Shared/Utils/SecretCamera-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B2882BD61F41638D00BC5385 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K4L43PV7CC;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = SecretCamera/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hungthai.joker.SecretCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "SecretCamera/Shared/Utils/SecretCamera-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B2882BBD1F41638D00BC5385 /* Build configuration list for PBXProject "SecretCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2882BD21F41638D00BC5385 /* Debug */,
+				B2882BD31F41638D00BC5385 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2882BD41F41638D00BC5385 /* Build configuration list for PBXNativeTarget "SecretCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2882BD51F41638D00BC5385 /* Debug */,
+				B2882BD61F41638D00BC5385 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B2882BBA1F41638D00BC5385 /* Project object */;
+}
