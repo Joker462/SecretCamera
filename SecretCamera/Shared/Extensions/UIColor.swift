@@ -26,7 +26,7 @@ extension UIColor {
         scanner.scanHexInt32(&hexInt)
         
         var r:UInt32!, g:UInt32!, b:UInt32!
-        switch (hexWithoutSymbol.length) {
+        switch (hexWithoutSymbol.count) {
         case 3: // #RGB
             r = ((hexInt >> 4) & 0xf0 | (hexInt >> 8) & 0x0f)
             g = ((hexInt >> 0) & 0xf0 | (hexInt >> 4) & 0x0f)

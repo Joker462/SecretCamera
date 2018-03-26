@@ -409,7 +409,7 @@ extension VideoPreviewPresenterImplementation: AVCaptureFileOutputRecordingDeleg
                         if !success {
                             print("Could not save movie to photo library: \(String(describing: error))")
                         }
-                        cleanup()
+//                        cleanup()
                     }
                     )
                 } else {
