@@ -56,7 +56,7 @@ class JButton: UIButton {
     }
     
     // MARK: Actions
-    func highlight() {
+    @objc func highlight() {
         if let existingLayer = roundRectLayer {
             existingLayer.removeFromSuperlayer()
         }

@@ -13,10 +13,6 @@ class BaseTableViewCell: UITableViewCell {
     var indexPath: IndexPath?
     weak var delegate:  TableViewCellDelegate?
     
-    class var identifier: String {
-        return String(describing: self)
-    }
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         selectionStyle = .default
@@ -28,9 +24,7 @@ class BaseTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    func configureCell<T>(anyItem: T) {
-        
-    }
+    func configureCell<T>(anyItem: T) {}
 }
 
 @objc protocol TableViewCellDelegate: class {

@@ -12,10 +12,6 @@ class BaseCollectionViewCell: UICollectionViewCell {
     
     var indexPath: IndexPath?
     
-    class var identifier: String {
-        return String(describing: self)
-    }
-    
     func configureCell<T>(anyItem: T) {
         
     }

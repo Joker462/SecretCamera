@@ -38,7 +38,7 @@ struct DeviceType {
     static let IPHONE_5          = UIDevice.current.userInterfaceIdiom == .phone && Screen.MAX == 568.0
     static let IPHONE_6          = UIDevice.current.userInterfaceIdiom == .phone && Screen.MAX == 667.0
     static let IPHONE_6P         = UIDevice.current.userInterfaceIdiom == .phone && Screen.MAX == 736.0
-    static let IPHONE_X          = UIDevice.current.userInterfaceIdiom == .phone && Screen.MAX == 812.0
+    static let IPHONE_X          = UIDevice.current.userInterfaceIdiom == .phone && Screen.MAX >= 812.0
     static let IPAD              = UIDevice.current.userInterfaceIdiom == .pad   && Screen.MAX == 1024.0
 }
 

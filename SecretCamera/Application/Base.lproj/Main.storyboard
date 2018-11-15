@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings View Controller-->
+        <scene sceneID="uIs-R3-0iB">
+            <objects>
+                <viewController storyboardIdentifier="SettingsViewController" id="zA4-bF-NL4" customClass="SettingsViewController" customModule="SecretCamera" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mgw-x1-fnu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="eWF-Le-EIP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eWF-Le-EIP" firstAttribute="top" secondItem="Mgw-x1-fnu" secondAttribute="top" id="0V8-X4-Q5X"/>
+                            <constraint firstAttribute="bottom" secondItem="eWF-Le-EIP" secondAttribute="bottom" id="A4l-xs-i3Q"/>
+                            <constraint firstAttribute="trailing" secondItem="eWF-Le-EIP" secondAttribute="trailing" id="vih-MW-f4e"/>
+                            <constraint firstItem="eWF-Le-EIP" firstAttribute="leading" secondItem="Mgw-x1-fnu" secondAttribute="leading" id="y7L-wX-Jkl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="odi-p5-lHD"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="X5I-oG-3jC">
+                        <nil key="title"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="JVA-Yq-9WQ">
+                            <connections>
+                                <action selector="nextButtonTapped" destination="zA4-bF-NL4" id="yJg-5b-OUA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="eWF-Le-EIP" id="1iX-gE-4lZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hbL-ht-eeI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3338" y="-970"/>
+        </scene>
+        <!--Sub Settings View Controller-->
+        <scene sceneID="z07-QE-pla">
+            <objects>
+                <viewController storyboardIdentifier="SubSettingsViewController" automaticallyAdjustsScrollViewInsets="NO" id="hIQ-fD-b5L" customClass="SubSettingsViewController" customModule="SecretCamera" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6er-5c-TgJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="djv-kN-uoT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="djv-kN-uoT" firstAttribute="top" secondItem="6er-5c-TgJ" secondAttribute="top" id="2FF-hH-bAS"/>
+                            <constraint firstAttribute="trailing" secondItem="djv-kN-uoT" secondAttribute="trailing" id="3eS-JM-y1Y"/>
+                            <constraint firstAttribute="bottom" secondItem="djv-kN-uoT" secondAttribute="bottom" id="iGn-Kx-oZi"/>
+                            <constraint firstItem="djv-kN-uoT" firstAttribute="leading" secondItem="6er-5c-TgJ" secondAttribute="leading" id="lBG-Fy-4eO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8Re-0c-LhS"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="djv-kN-uoT" id="Zzu-5r-gZP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eBF-0e-H6R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4135" y="-970"/>
+        </scene>
+        <!--Video View Controller-->
+        <scene sceneID="HcO-IH-gCM">
+            <objects>
+                <viewController storyboardIdentifier="VideoViewController" id="xSY-Xp-FHu" customClass="VideoViewController" customModule="SecretCamera" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hDF-im-R7q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lXD-34-02m" customClass="PreviewView" customModule="SecretCamera" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="lXD-34-02m" secondAttribute="trailing" id="1ej-JD-PH5"/>
+                            <constraint firstAttribute="bottom" secondItem="lXD-34-02m" secondAttribute="bottom" id="503-ID-UMR"/>
+                            <constraint firstItem="lXD-34-02m" firstAttribute="leading" secondItem="hDF-im-R7q" secondAttribute="leading" id="ISx-vC-Ocg"/>
+                            <constraint firstItem="lXD-34-02m" firstAttribute="top" secondItem="hDF-im-R7q" secondAttribute="top" id="U9f-Uo-TKn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4D1-7J-Mil"/>
+                    </view>
+                    <connections>
+                        <outlet property="previewView" destination="lXD-34-02m" id="PLa-eJ-JGo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="INd-rK-vqu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5004" y="-313"/>
+        </scene>
+        <!--Photo View Controller-->
+        <scene sceneID="fww-5d-pc5">
+            <objects>
+                <viewController storyboardIdentifier="PhotoViewController" automaticallyAdjustsScrollViewInsets="NO" id="92s-2W-HC0" customClass="PhotoViewController" customModule="SecretCamera" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yX0-wz-ZEh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GBF-bH-bl5" customClass="PreviewView" customModule="SecretCamera" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GBF-bH-bl5" firstAttribute="top" secondItem="yX0-wz-ZEh" secondAttribute="top" id="0iP-VV-jhM"/>
+                            <constraint firstAttribute="trailing" secondItem="GBF-bH-bl5" secondAttribute="trailing" id="JgN-K5-JS9"/>
+                            <constraint firstAttribute="bottom" secondItem="GBF-bH-bl5" secondAttribute="bottom" id="aRn-gG-G3f"/>
+                            <constraint firstItem="GBF-bH-bl5" firstAttribute="leading" secondItem="yX0-wz-ZEh" secondAttribute="leading" id="nMo-4U-9LJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3Qf-d9-IjF"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="previewView" destination="GBF-bH-bl5" id="FwT-0K-8aZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VOV-Mo-JO8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5004" y="-970.19704433497543"/>
+        </scene>
+        <!--Tutorial View Controller-->
+        <scene sceneID="JbA-Yt-duX">
+            <objects>
+                <viewController storyboardIdentifier="TutorialViewController" automaticallyAdjustsScrollViewInsets="NO" id="O2U-DA-AnR" customClass="TutorialViewController" customModule="SecretCamera" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JEb-aj-Gqf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3je-21-nlu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="fR4-tM-1Mi">
+                                <rect key="frame" x="168" y="701" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="currentPageIndicatorTintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMV-Je-bi8">
+                                <rect key="frame" x="172" y="742" width="30" height="30"/>
+                                <state key="normal" title="Skip"/>
+                                <connections>
+                                    <action selector="skipButtonTapped" destination="O2U-DA-AnR" eventType="touchUpInside" id="Z4u-rZ-hDj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fR4-tM-1Mi" firstAttribute="centerX" secondItem="cTb-Mv-rJj" secondAttribute="centerX" id="9uu-TA-G5q"/>
+                            <constraint firstItem="GMV-Je-bi8" firstAttribute="centerX" secondItem="cTb-Mv-rJj" secondAttribute="centerX" id="EzW-R3-8tH"/>
+                            <constraint firstItem="GMV-Je-bi8" firstAttribute="top" secondItem="fR4-tM-1Mi" secondAttribute="bottom" constant="4" id="GIB-Wj-TcT"/>
+                            <constraint firstAttribute="bottom" secondItem="3je-21-nlu" secondAttribute="bottom" id="jny-GV-3Ht"/>
+                            <constraint firstItem="3je-21-nlu" firstAttribute="leading" secondItem="cTb-Mv-rJj" secondAttribute="leading" id="n1c-wa-Vp6"/>
+                            <constraint firstItem="3je-21-nlu" firstAttribute="top" secondItem="JEb-aj-Gqf" secondAttribute="top" id="pdt-8Y-jGl"/>
+                            <constraint firstAttribute="bottom" secondItem="GMV-Je-bi8" secondAttribute="bottom" constant="40" id="sDq-q9-Pin"/>
+                            <constraint firstItem="cTb-Mv-rJj" firstAttribute="trailing" secondItem="3je-21-nlu" secondAttribute="trailing" id="vVV-kX-wa5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cTb-Mv-rJj"/>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="fR4-tM-1Mi" id="PSn-pl-2wV"/>
+                        <outlet property="scrollView" destination="3je-21-nlu" id="eIv-SR-dNk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pJX-WK-T9b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1020" y="-970.19704433497543"/>
+        </scene>
+        <!--Covers View Controller-->
+        <scene sceneID="wf0-qx-0Xi">
+            <objects>
+                <viewController storyboardIdentifier="CoversViewController" id="IEy-Xd-9Cq" customClass="CoversViewController" customModule="SecretCamera" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V7B-ha-vcg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0yr-Ya-yMD" customClass="iCarousel">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPh-cs-5NF">
+                                <rect key="frame" x="166.33333333333334" y="729.33333333333337" width="42.333333333333343" height="42.666666666666629"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ZPh-cs-5NF" secondAttribute="height" multiplier="1:1" id="XgD-Ha-cqI"/>
+                                </constraints>
+                                <state key="normal" image="next_button"/>
+                                <state key="highlighted" image="next_button_highlight"/>
+                                <connections>
+                                    <action selector="nextButtonTapped" destination="IEy-Xd-9Cq" eventType="touchUpInside" id="WOI-4e-TNB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0yr-Ya-yMD" firstAttribute="height" secondItem="V7B-ha-vcg" secondAttribute="height" id="7ih-Ej-BEd"/>
+                            <constraint firstItem="0yr-Ya-yMD" firstAttribute="centerY" secondItem="V7B-ha-vcg" secondAttribute="centerY" id="PT2-Qr-KtQ"/>
+                            <constraint firstItem="0yr-Ya-yMD" firstAttribute="leading" secondItem="V7B-ha-vcg" secondAttribute="leading" id="f4f-wN-LYd"/>
+                            <constraint firstAttribute="trailing" secondItem="0yr-Ya-yMD" secondAttribute="trailing" id="hh2-X9-WNd"/>
+                            <constraint firstItem="ZPh-cs-5NF" firstAttribute="height" secondItem="V7B-ha-vcg" secondAttribute="height" multiplier="35:667" id="j5l-cc-QWi"/>
+                            <constraint firstItem="0yr-Ya-yMD" firstAttribute="centerX" secondItem="V7B-ha-vcg" secondAttribute="centerX" id="lPe-qs-WcF"/>
+                            <constraint firstAttribute="bottom" secondItem="ZPh-cs-5NF" secondAttribute="bottom" constant="40" id="r0H-1a-duY"/>
+                            <constraint firstItem="ZPh-cs-5NF" firstAttribute="centerX" secondItem="GNB-cE-gz0" secondAttribute="centerX" id="wFH-ro-78G"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GNB-cE-gz0"/>
+                    </view>
+                    <connections>
+                        <outlet property="iCarouselView" destination="0yr-Ya-yMD" id="vy9-Pg-XUU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vtl-wB-1iD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1801" y="-970"/>
+        </scene>
+        <!--Actions View Controller-->
+        <scene sceneID="dgx-2j-uLP">
+            <objects>
+                <viewController storyboardIdentifier="ActionsViewController" id="O77-Mo-cGV" customClass="ActionsViewController" customModule="SecretCamera" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A8h-8O-vyE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="2I6-pC-9J4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="2I6-pC-9J4" secondAttribute="bottom" id="NKG-Ca-Mvj"/>
+                            <constraint firstItem="2I6-pC-9J4" firstAttribute="top" secondItem="A8h-8O-vyE" secondAttribute="top" id="Vzi-eh-gor"/>
+                            <constraint firstAttribute="trailing" secondItem="2I6-pC-9J4" secondAttribute="trailing" id="aRG-Xi-XYm"/>
+                            <constraint firstItem="2I6-pC-9J4" firstAttribute="leading" secondItem="A8h-8O-vyE" secondAttribute="leading" id="ivb-fV-MW2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kOZ-EM-fRO"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="2I6-pC-9J4" id="sJr-1d-4Yg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EqN-xm-GY0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2566" y="-970"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="next_button" width="227" height="227"/>
+        <image name="next_button_highlight" width="227" height="227"/>
+    </resources>
+</document>

@@ -14,7 +14,7 @@ final class Cover {
     // Video/Photo
     let actions = [Action(name: "Photo", imageNamed: "ic_photo"),
                    Action(name: "Video", imageNamed: "ic_video")]
-    var actionIndex:    Int?
+    var actionIndex:        Int?
     
     init(name: String, imageNamed: String) {
         self.name = name
