@@ -40,7 +40,7 @@ protocol PhotoViewOutput: class {
     func showAnimationCaptureOnPreview()
 }
 
-final class PhotoViewModel: PhotoViewInput {
+final class PhotoViewModel: NSObject, PhotoViewInput {
     
     // MARK: - Output protocol
     weak var output: PhotoViewOutput?
@@ -60,13 +60,14 @@ final class PhotoViewModel: PhotoViewInput {
     fileprivate var inProgressPhotoCaptureDelegates = [Int64: PhotoCaptureProcessor]()
     // Observers
     fileprivate var sessionRunningObserveContext = 0
-    fileprivate var timer: Timer?
+    fileprivate var timer: RepeatingTimer?
     
     // MARK: - Construction
     init(navigator: PhotoNavigator, output: PhotoViewOutput) {
         self.navigator = navigator
         self.output = output
         action = Database.shared.coverSelected.actions[Database.shared.coverSelected.actionIndex!]
+        super.init()
     }
     
     // MARK: - View cycle triggers
@@ -112,7 +113,7 @@ final class PhotoViewModel: PhotoViewInput {
                 self?.session.stopRunning()
             }
         }
-        timer?.invalidate()
+        timer?.suspend()
     }
     
     func applicationWillEnterForeground() {
@@ -130,13 +131,18 @@ final class PhotoViewModel: PhotoViewInput {
             }
         }
         
-        // Auto Repeat Photo Settings
-        if let autoRepeatPhotoSetting = action.settings.first as? SettingLogoWithSwitch {
-            if autoRepeatPhotoSetting.isSelected, let timePhotoSetting = action.settings.last as? PhotoTimeSetting {
-                // Time option 3s, 5s and 10s
-                addCaptureTimer(timePhotoSetting.index == 0 ? 3 : (timePhotoSetting.index == 1 ? 5 : 10))
+        guard let timer = timer else {
+            // Auto Repeat Photo Settings
+            if let autoRepeatPhotoSetting = action.settings.first as? SettingLogoWithSwitch {
+                if autoRepeatPhotoSetting.isSelected, let timePhotoSetting = action.settings.last as? PhotoTimeSetting {
+                    // Time option 3s, 5s and 10s
+                    addCaptureTimer(timePhotoSetting.index == 0 ? 3 : (timePhotoSetting.index == 1 ? 5 : 10))
+                }
             }
+            return
         }
+        
+        timer.resume()
     }
 }
 
@@ -261,7 +267,7 @@ private extension PhotoViewModel {
     
     func setupCameraPosition() -> AVCaptureDevice? {
         var defaultVideoDevice: AVCaptureDevice?
-        if let cameraPositionSetting = action.cameraSettings.last as? CameraPositionSetting {
+        if let cameraPositionSetting = action.cameraSettings.first as? CameraPositionSetting {
             if cameraPositionSetting.index == 0 {
                 // Back Camera
                 // Choose the back dual camera if available, otherwise default to a wide angle camera.
@@ -307,8 +313,12 @@ private extension PhotoViewModel {
     ///
     /// - Parameter timeInterval: Seconds
     func addCaptureTimer(_ timeInterval: TimeInterval) {
-        timer?.invalidate()
-        timer = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(capturePhoto), userInfo: nil, repeats: true)
+        timer = RepeatingTimer(timeInterval: timeInterval)
+        timer?.eventHandler = { [weak self] in
+            self?.capture()
+        }
+        timer?.resume()
+//        timer = Timer.scheduledTimer(timeInterval: timeInterval, target: self, selector: #selector(capturePhoto), userInfo: nil, repeats: true)
     }
 }
 
@@ -349,7 +359,7 @@ extension PhotoViewModel {
     }
     
     @objc
-    private func capturePhoto() {
+    func capturePhoto() {
         capture()
     }
 }

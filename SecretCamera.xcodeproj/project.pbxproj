@@ -74,6 +74,7 @@
 		B2882BE81F419C9900BC5385 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2882BE71F419C9900BC5385 /* Constants.swift */; };
 		B2882BEA1F419DB300BC5385 /* CameraSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2882BE91F419DB300BC5385 /* CameraSetting.swift */; };
 		B2BA6C741F74D2A8003FAEFA /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BA6C731F74D2A8003FAEFA /* Action.swift */; };
+		B2CD908F219DC6F200A8662F /* RepeatingTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CD908E219DC6F200A8662F /* RepeatingTimer.swift */; };
 		B2E307921F5E956600790309 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E307911F5E956600790309 /* Setting.swift */; };
 		B2FE8AFB1F45E5B0001BB1C4 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FE8AFA1F45E5B0001BB1C4 /* BaseCollectionViewCell.swift */; };
 		B2FEC4CC1F4FBE03008166F5 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FEC4CB1F4FBE03008166F5 /* Reachability.swift */; };
@@ -152,6 +153,7 @@
 		B2882BE71F419C9900BC5385 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B2882BE91F419DB300BC5385 /* CameraSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraSetting.swift; sourceTree = "<group>"; };
 		B2BA6C731F74D2A8003FAEFA /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		B2CD908E219DC6F200A8662F /* RepeatingTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingTimer.swift; sourceTree = "<group>"; };
 		B2E307911F5E956600790309 /* Setting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		B2FE8AFA1F45E5B0001BB1C4 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		B2FEC4CB1F4FBE03008166F5 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
@@ -295,6 +297,7 @@
 				B24DB03D1F4D2E090044D53D /* iCarousel */,
 				B207F3FF1F4B1D15003815C4 /* ViewRouter.swift */,
 				B21CD1421F569549003CA788 /* PreviewView.swift */,
+				B2CD908E219DC6F200A8662F /* RepeatingTimer.swift */,
 			);
 			path = Libraries;
 			sourceTree = "<group>";
@@ -475,7 +478,7 @@
 				TargetAttributes = {
 					B2882BC11F41638D00BC5385 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = JPES8SV6LU;
+						DevelopmentTeam = K4L43PV7CC;
 						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 					};
@@ -562,6 +565,7 @@
 				B23DF7731F629B660007BDEA /* CoversCarouselControl.swift in Sources */,
 				379862902186ABEC00DF55E8 /* UIViewController.swift in Sources */,
 				3718F4CA2192F3740012A643 /* VideoViewController.swift in Sources */,
+				B2CD908F219DC6F200A8662F /* RepeatingTimer.swift in Sources */,
 				372D52AD219A6E57000280FC /* PhotoCaptureDelegate.swift in Sources */,
 				3730D1AA2188639A00C854A2 /* CoversViewController.swift in Sources */,
 				3744BF99218811BF00174040 /* TutorialContainerView.swift in Sources */,
@@ -727,7 +731,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JPES8SV6LU;
+				DEVELOPMENT_TEAM = K4L43PV7CC;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/SecretCamera/Application/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
@@ -750,7 +754,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JPES8SV6LU;
+				DEVELOPMENT_TEAM = K4L43PV7CC;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/SecretCamera/Application/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;

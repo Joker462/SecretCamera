@@ -114,8 +114,10 @@ extension PhotoViewController: PhotoViewOutput {
     }
     
     func setupCaptureButton(_ hidden: Bool) {
-        (coverView as? BlackCoverView)?.createCaptureButton(hidden)
-        (coverView as? GameCoverView)?.createCaptureButton(hidden)
+        DispatchQueue.main.async { [weak self] in
+            (self?.coverView as? BlackCoverView)?.createCaptureButton(hidden)
+            (self?.coverView as? GameCoverView)?.createCaptureButton(hidden)
+        }
     }
     
     func setupVideoPreview(session: AVCaptureSession) {

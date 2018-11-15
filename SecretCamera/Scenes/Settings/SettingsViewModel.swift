@@ -161,6 +161,9 @@ extension SettingsViewModel {
             settingWithOptions = action.cameraSettings[indexPath.row] as? SettingWithOptions
             break
         }
-        navigator.navigate(option: .subSettings(settingWithOptions!, indexPath))
+        
+        if let settingOptions = settingWithOptions {
+            navigator.navigate(option: .subSettings(settingOptions, indexPath))
+        }
     }
 }

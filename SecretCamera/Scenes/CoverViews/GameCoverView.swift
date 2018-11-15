@@ -36,7 +36,7 @@ class GameCoverView: UIView {
     
     func createCaptureButton(_ isHidden: Bool) {
         let captureImage = UIImage(named: "capture_logo")
-        let captureFrame = CGRect(x: Screen.WIDTH - (captureImage!.size.width + 12), y: 12, width: captureImage!.size.width, height: captureImage!.size.height)
+        let captureFrame = CGRect(x: Screen.WIDTH - (captureImage!.size.width + 12), y: 30, width: captureImage!.size.width, height: captureImage!.size.height)
         let captureButton = UIButton(frame: captureFrame)
         captureButton.setImage(captureImage, for: .normal)
         captureButton.alpha = isHidden ? 0.011 : 1
